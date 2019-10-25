@@ -1,0 +1,62 @@
+.navbar {
+    background-color: darkslategrey;
+    bottom: 0;
+    display: flex;
+    flex-direction: column;
+    max-width: 400px;
+    position: fixed;
+    top: 0;
+    transition: width .5s;
+    overflow-x: hidden;
+
+    &__home {
+        align-items: center;
+        display: flex;
+        flex-direction: row;
+        padding: 1.5rem 0;
+        justify-content: center;
+        width: 5rem;
+
+        a {
+            color: white;
+            text-decoration: none;
+            font-style: bold;
+        }
+    }
+
+    &__item {
+        align-items: center;
+        display: flex;
+        flex-direction: row;
+
+        &__icon {
+            padding: 1.5rem;
+        }
+
+        &__title {
+            button {
+                background-color: transparent;
+                border: none;
+                color: white;
+                font-size: 2rem;
+
+                &:hover {
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+
+    &__expandable {
+        background-color: gray;
+        display: flex;
+        flex-direction: column;
+        &__items {
+            transition: all .5s;
+            overflow: hidden;
+            p {
+                color: white;
+            }
+        }
+    }
+}
